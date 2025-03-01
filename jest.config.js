@@ -6,5 +6,8 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest',
     '^.+\\.tsx?$': 'babel-jest',
   },
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/$1',
+  },
   moduleFileExtensions: ['js', 'jsx', 'json', 'node', 'ts', 'tsx'],
 };
