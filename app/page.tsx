@@ -1,7 +1,17 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold text-blue-600">nothing here</h1>
-    </main>
+    <>
+      <header className="mb-4 p-4">
+        <nav>
+          <a href="/shop" className="text-blue-500 hover:underline">
+            Go to Shop
+          </a>
+        </nav>
+      </header>
+      <main className="p-4">
+        <h1>Welcome to the Home Page!</h1>
+        <p>This is the home page.</p>
+      </main>
+    </>
   );
 }

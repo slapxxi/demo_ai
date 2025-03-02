@@ -5,10 +5,7 @@ import '@testing-library/jest-dom';
 describe('Home Component', () => {
   test('renders the heading', () => {
     render(<Home />);
-    const headingElement = screen.getByText(/nothing here/i);
+    const headingElement = screen.getByText(/welcome to the home page!/i);
     expect(headingElement).toBeInTheDocument();
-    expect(headingElement).toHaveClass('text-4xl');
-    expect(headingElement).toHaveClass('font-bold');
-    expect(headingElement).toHaveClass('text-blue-600');
   });
 });
