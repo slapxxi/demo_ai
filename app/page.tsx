@@ -1,4 +1,4 @@
-export default function Home() {
+const Home = () => {
   return (
     <>
       <header className="mb-4 p-4">
@@ -14,4 +14,6 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;
