@@ -1,34 +1,34 @@
 import { LayoutProps } from '@/.next/types/app/layout';
-import { getItems } from '@/lib/getItems'; // Adjust the import path as necessary
+import Link from 'next/link';
 
 const ShopLayout: React.FC<LayoutProps> = async ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="p-4 mb-4 text-white bg-gray-800">
         <h1 className="text-2xl text-white">
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </h1>
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a href="/shop" className="text-blue-500 hover:underline">
+              <Link href="/shop" className="text-blue-500 hover:underline">
                 Main
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/shop/products" className="text-blue-500 hover:underline">
+              <Link href="/shop/products" className="text-blue-500 hover:underline">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/shop/cart" className="text-blue-500 hover:underline">
+              <Link href="/shop/cart" className="text-blue-500 hover:underline">
                 Cart
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/shop/checkout" className="text-blue-500 hover:underline">
+              <Link href="/shop/checkout" className="text-blue-500 hover:underline">
                 Checkout
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

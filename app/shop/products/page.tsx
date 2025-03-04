@@ -1,4 +1,5 @@
 import { getItems } from '@/lib/getItems'; // Ensure you import the function to get items
+import Link from 'next/link'; // Import Link from Next.js
 
 export default async function ProductsPage() {
   const products = await getItems(); // Fetch the products
@@ -9,9 +10,9 @@ export default async function ProductsPage() {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            <a href={`/shop/product/${product.id}`} className="text-blue-500 hover:underline">
+            <Link href={`/shop/product/${product.id}`} className="text-blue-500 hover:underline">
               {product.name} - ${product.price}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
