@@ -2,9 +2,6 @@ import { LayoutProps } from '@/.next/types/app/layout';
 import { getItems } from '@/lib/getItems'; // Adjust the import path as necessary
 
 const ShopLayout: React.FC<LayoutProps> = async ({ children }) => {
-  let items = await getItems();
-  console.log(items);
-
   return (
     <div className="flex flex-col min-h-screen">
       <header className="p-4 mb-4 text-white bg-gray-800">
