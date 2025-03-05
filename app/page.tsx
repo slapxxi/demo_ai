@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <>
-      <header className="mb-4 p-4">
+      <header className="p-4 mb-4">
         <nav>
           <a href="/shop" className="text-blue-500 hover:underline">
             Go to Shop
